@@ -1,0 +1,30 @@
+{
+  "name": "sweet",
+  "version": "1.0.0",
+  "description": "Sweet Site",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingdomKlyuch/sweet.git"
+  },
+  "author": "kneedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingdomKlyuch/sweet/issues"
+  },
+  "homepage": "https://github.com/KingdomKlyuch/sweet#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.32.0",
+    "less-loader": "^11.1.0",
+    "prettier": "^2.8.3",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1"
+  }
+}

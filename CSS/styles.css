@@ -1,0 +1,50 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      "logo logo logo"
+      "button1 button2 button3"
+      "button4 button4 button4"
+      "image image image";
+    grid-template-columns: 25% 50% 25%;
+    height: 100vh;
+    position: relative;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: yellow;
+}
+
+.button1 {
+    grid-area: button1;
+    background-color: blue;
+}
+
+.button2 {
+    grid-area: button2;
+    background-color: green;
+}
+
+.button3 {
+    grid-area: button3;
+    background-color: pink;
+}
+
+.button4 {
+    grid-area: button4;
+    background-color: purple;
+}
+
+.image {
+    grid-area: image;
+    background-color: red;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+  
+  .second-grid {
+    /* Add styles as needed */
+  }
+  

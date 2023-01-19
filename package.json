@@ -26,6 +26,8 @@
     "eslint": "^8.32.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-webpack": "^1.5.0",
     "less-loader": "^11.1.0",
     "prettier": "^2.8.3",
     "sass-loader": "^13.2.0",
@@ -33,6 +35,8 @@
   },
   "dependencies": {
     "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1"
+    "eslint-plugin-prettier": "^4.2.1",
+    "findup-sync": "^5.0.0",
+    "liftoff": "^4.0.0"
   }
 }

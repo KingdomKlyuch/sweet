@@ -1,17 +1,33 @@
+body, html {
+    height: 100%;
+  }
+
 .grid-container-1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-    grid-template-rows: repeat(3, 1fr); /* 3 rows with equal height */
     grid-template-areas: 
-      "box box box"
-      "girl girl girl"
-      "girl girl girl";
-    background-image: url('/images/plainhd.png');
+      "box box box box girl girl"
+      "buildings buildings buildings buildings girl girl"
+      "buildings buildings buildings buildings girl girl";
+    background-image: url("/images/plainhd.png");
     background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
     background-position: center;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.grid-container-2 {
+    display: grid;
+    grid-template-areas: 
+      "buttony buttony buttony"
+      "buttony buttony buttony"
+      "buttonx buttonx buttonx";
+    background-image: url('/images/plainhd.png');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
 .logo {
     grid-area: logo;
     background-color: yellow;
@@ -24,55 +40,55 @@
 
     
 
-.button1, .button2, .button3, .button4 {
-    background-color: rgba(255, 250, 250, 0.1);
-    padding: 5em;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: 1;
-}
-
-.button1 {
-        background-image: url('/images/cloud1.png');
-        background-size: 100% 100%; /*to make the image cover the entire element */
-        background-repeat: no-repeat; /*to make the image not repeat */
+    .button1, .button2, .button3, .button4 {
+        background-color: rgba(255, 250, 250, 0.1);
+        padding: 5em;
+        top: 0;
+        left: 0;
         position: absolute;
-        margin-top: 10em;
-        margin-left: 20em;
+        z-index: 1;
+    }
+
+    .button1 {
+            grid-area: button1;
+            background-image: url('/images/cloud1.png');
+            background-size: 100% 100%; /*to make the image cover the entire element */
+            background-repeat: no-repeat; /*to make the image not repeat */
+            position: absolute;
+            margin-top: 10em;
+            margin-left: 20em;
+            }
+
+    .button2 {
+            background-image: url('/images/cloud2.png');
+            background-size: 100% 100%; /*to make the image cover the entire element */
+            background-repeat: no-repeat; /*to make the image not repeat */
+            margin-top: 20em;
+            margin-left: 30em;
+        }
+    .button3 {
+            background-image: url('/images/cloud3.png');
+            background-size: 100% 100%; /*to make the image cover the entire element */
+            background-repeat: no-repeat; /*to make the image not repeat */
+            margin-top: 40em;
+            margin-left: 40em;
+        }
+    .button4 {
+            background-image: url('/images/cloud4.png');
+            background-size: 100% 100%; /*to make the image cover the entire element */
+            background-repeat: no-repeat; /*to make the image not repeat */
+            margin-top: 30em;
+            margin-left: 50em;
         }
 
-.button2 {
-        background-image: url('/images/cloud2.png');
-        background-size: 100% 100%; /*to make the image cover the entire element */
-        background-repeat: no-repeat; /*to make the image not repeat */
-        margin-top: 20em;
-        margin-left: 30em;
-    }
-.button3 {
-        background-image: url('/images/cloud3.png');
-        background-size: 100% 100%; /*to make the image cover the entire element */
-        background-repeat: no-repeat; /*to make the image not repeat */
-        margin-top: 40em;
-        margin-left: 40em;
-    }
-.button4 {
-        background-image: url('/images/cloud4.png');
-        background-size: 100% 100%; /*to make the image cover the entire element */
-        background-repeat: no-repeat; /*to make the image not repeat */
-        margin-top: 30em;
-        margin-left: 50em;
-    }
-
-    .girl {
+        .girl {
             grid-area: girl;
-            background-image: url(/images/scrollingfront.png);
+            background-image: url(/images/girl.png);
             background-size: 100% 100%;
-            width: 100%;
-            height: 150%;
-            margin-top: -16.2em;
-            z-index: 5;
+            background-repeat: no-repeat;
         }
+        
+        
     
     .box {
             grid-area: box;
@@ -80,184 +96,17 @@
             background-size: 100% 100%;
             height: 150%;
             width: 50%;
-            margin-top: 10em;
-            margin-left: 30em;
-    }
-    
-
-/* Default styles for screens larger than 800px */
-/*.grid-container-1 {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-}
-
-/* Styles for screens between 600px and 800px */
-@media (max-width: 800px) {
-    .grid-container {
-        grid-template-columns: 25% 25%;
-    }
-}
-
-/* Styles for screens smaller than 600px */
-@media (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: 0% 25% 10%;
-    }
-}
-
-/* Styles for screens smaller than 600px */
-@media (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: 0% 25% 10%;
-    }
-}
-
-/* Styles for screens smaller than 600px */
-@media (max-width: 600px) {
-    .button2 {
-        grid-area: button2;
-        background-color: rgba(255, 250, 250, 0.1);
-        max-width: 60%;
-        max-height: 20%;
-        padding: 5em;
-        margin-left: 15em;
-        margin-top: 15em;
-    }
-    
-    }
-
-    /* Styles for screens smaller than 600px */
-@media (max-width: 600px) {
-    .button3 {
-        grid-area: button3;
-        background-color: rgba(255, 250, 250, 0.1);
-        max-width: 70%;
-        max-height: 20%;
-        padding: 5em;
-        margin-left: 10em;
-        margin-top: 0em;
-    }
-    
-    }
-
-    @media (max-width: 800px) {
-        .button3 {
-            grid-area: button3;
-            background-color: rgba(255, 250, 250, 0.1);
-            max-width: 70%;
-            max-height: 20%;
-            padding: 5em;
-            margin-left: 0em;
             margin-top: 0em;
-        }
-        
-        }
-    
-
-        /* Styles for screens smaller than 600px */
-@media (max-width: 600px) {
-    .button4 {
-        grid-area: button4;
-        background-color: rgba(255, 250, 250, 0.1);
-        max-width: 70%;
-        max-height: 20%;
-        padding: 4em;
-        margin-left: 0em;
-        margin-top: -10em;
+            margin-left: 0em;
     }
     
+    .buildings {
+        grid-area: buildings;
+        background-image: url(/images/buildings.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 140%;
     }
 
-
-.logo-img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-.fixed-nav {
-    top: 0;
-    left: 0;
-    display: flex;
-}
-
-.logo {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    z-index: 2;
-    position: fixed;
-  }
-  
-  .logo {
-    font-size: 2rem;
-  }
-  
-  
-  .menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .bar {
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    margin: 5px;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    color: rgb(240, 252, 129);
-    text-decoration: none;
-    font-size: 25px;
-  }
-  
-  /* Add this media query to change the styling when screen width is less than 600px */
-  @media screen and (max-width: 600px) {
-    .nav-links {
-      display: none;
-    }
-    .menu-icon {
-      display: block;
-      margin-left: 18em;
-    }
-  }
-  
-  .nav-links a:active {
-    color: #fff;
-    background-color: #ff0000;
-    box-shadow: 0 0 10px #000;
-    border-radius: 5px;
-  }
-
-  .nav-links a::before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-    position: absolute;
-    transform: scaleX(0);
-    transition: all 0.3s ease;
-  }
-  .nav-links a:hover::before {
-    transform: scaleX(1);
-  }
   
 

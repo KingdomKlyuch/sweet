@@ -1,36 +1,37 @@
-const babel = require("@babel/core");
-const presetEnv = require("@babel/preset-env");
-
-const modal = document.createElement("div");
-modal.innerHTML = "Modal content";
-modal.style.display = "none";
-modal.style.position = "fixed";
-modal.style.zIndex = "1";
-modal.style.left = "0";
-modal.style.top = "0";
-modal.style.width = "100%";
-modal.style.height = "100%";
-modal.style.overflow = "auto";
-modal.style.backgroundColor = "rgba(0,0,0,0.4)";
-
-const trigger = document.getElementById("my-element");
-trigger.addEventListener("click", function() {
-  modal.style.display = "block";
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    $('.button1').css({'transform': 'translate(' + (scroll/1) + 'px, '+ (scroll/4) +'px)'});
+    $('.button2').css({'transform': 'translate(' + (-scroll/1) + 'px, '+ (-scroll/2) +'px)'});
+    $('.button3').css({'transform': 'translate(' + (scroll/3) + 'px, '+ (scroll/6) +'px)'});
+    $('.button4').css({'transform': 'translate(' + (scroll/1) + 'px, '+ (scroll/-2) +'px)'});
 });
 
-const closeButton = document.createElement("span");
-closeButton.innerHTML = "&times;";
-closeButton.style.color = "#fff";
-closeButton.style.fontSize = "30px";
-closeButton.style.fontWeight = "bold";
-closeButton.style.position = "absolute";
-closeButton.style.top = "10px";
-closeButton.style.right = "25px";
-closeButton.style.cursor = "pointer";
-modal.appendChild(closeButton);
+var secondGrid = document.querySelector('.second-grid');
+var navbar = document.querySelector('nav');
 
-closeButton.addEventListener("click", function() {
-  modal.style.display = "none";
+window.addEventListener('scroll', function() {
+    if (isScrolledIntoView(secondGrid)) {
+        navbar.style.visibility = 'visible';
+    } else {
+        navbar.style.visibility = 'hidden';
+    }
 });
 
-document.body.appendChild(modal);
+function isScrolledIntoView(el) {
+    var rect = el.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+
+    return (elemTop >= 0) && (elemBottom <= window.innerHeight);
+}
+
+window.addEventListener("scroll", function(){
+    var secondGridPosition = secondGrid.getBoundingClientRect();
+    var navbarPosition = navbar.getBoundingClientRect();
+    if(secondGridPosition.top <= navbarPosition.height){
+      navbar.style.visibility = 'visible';
+    }else{
+      navbar.style.visibility = 'hidden';
+    }
+  });
+  

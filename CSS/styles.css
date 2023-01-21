@@ -47,26 +47,25 @@ body, html {
         background-size: 100% 100%; /*to make the image cover the entire element */
         background-repeat: no-repeat;
         width: 80%;
-        height: 60%;
+        height: 40%;
     }
 
     .button1 {
             grid-area: button1;
             background-image: url('/images/cloud1.png'); 
-
+            margin-top: 100%;
             }
 
     .button2 {
             grid-area: button2;
             background-image: url('/images/cloud2.png');
+            margin-top: 40%;
         }
     .button3 {
             grid-area: button3;
             background-image: url('/images/cloud3.png');
-        }
-    .button4 {
-            grid-area: button4;
-            background-image: url('/images/cloud4.png');
+            margin-left: 100%;
+            margin-top: 40%;
         }
 
         .girl {
@@ -83,10 +82,9 @@ body, html {
             grid-area: box;
             background-image: url(/images/box.png);
             background-size: 100% 100%;
-            height: 150%;
-            width: 50%;
+            height: 110%;
+            width: 220%;
             margin-top: 0em;
-            margin-left: 50%;
     }
     
     .buildings {
@@ -121,6 +119,13 @@ body, html {
         .buildings{
             width:120%;
         }
+        .button1, .button2, .button3{
+            width: 110%;
+        }
+        
+        .box{
+            padding: 50%;
+        }
 
       }
 
@@ -136,7 +141,7 @@ body, html {
           grid-template-rows: 25% 25% 25%
         }
         .box, .girl, .buildings, .button1, .button2, .button3, .button4 {
-          max-width: 120%; /* make the elements take up the full width of the screen */
+          max-width: 150%; /* make the elements take up the full width of the screen */
           max-height: 100%;
         }
         .girl {
@@ -148,6 +153,12 @@ body, html {
         .buildings{
             width:120%;
         }
+        .box {
+            padding: 75%;
+            width: 150%;
+            height: 60%;
+        }
+
       }
       
       @media (max-width: 460px) {

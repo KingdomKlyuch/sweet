@@ -55,8 +55,8 @@ body, html {
             background-size: 100% 100%; /*to make the image cover the entire element */
             background-repeat: no-repeat; /*to make the image not repeat */
             position: absolute;
-            margin-top: 10em;
-            margin-left: 20em;
+            margin-top: 5em;
+            margin-left: 5em;
             }
 
     .button2 {
@@ -64,21 +64,21 @@ body, html {
             background-size: 100% 100%; /*to make the image cover the entire element */
             background-repeat: no-repeat; /*to make the image not repeat */
             margin-top: 20em;
-            margin-left: 30em;
+            margin-left: 25em;
         }
     .button3 {
             background-image: url('/images/cloud3.png');
             background-size: 100% 100%; /*to make the image cover the entire element */
             background-repeat: no-repeat; /*to make the image not repeat */
             margin-top: 40em;
-            margin-left: 40em;
+            margin-left: 65em;
         }
     .button4 {
             background-image: url('/images/cloud4.png');
             background-size: 100% 100%; /*to make the image cover the entire element */
             background-repeat: no-repeat; /*to make the image not repeat */
-            margin-top: 30em;
-            margin-left: 50em;
+            margin-top: 20em;
+            margin-left: 55em;
         }
 
         .girl {
@@ -132,6 +132,20 @@ body, html {
         }
         .buildings{
             width:120%;
+        }
+        .button1{
+        margin-left: 0%;
+        }
+        .button2{
+        margin-left: 15%;
+        }
+        .button3{
+        margin-left: 30%;
+        margin-top: 5%;
+        }
+        .button4{
+        margin-left: 60%;
+        margin-top: 30%;
         }
       }
 

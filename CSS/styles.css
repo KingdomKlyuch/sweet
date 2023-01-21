@@ -86,6 +86,7 @@ body, html {
             background-image: url(/images/girl.png);
             background-size: 100% 100%;
             background-repeat: no-repeat;
+            z-index: 2;
         }
         
         
@@ -106,7 +107,61 @@ body, html {
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 140%;
+        z-index: 2;
     }
 
-  
+    @media (max-width: 600px) {
+        .grid-container-1 {
+          height: 80%;
+          grid-template-areas: 
+              ". . . . . . "
+              "box box box box girl girl"
+              "buildings buildings buildings buildings girl girl"
+              "buildings buildings buildings buildings girl girl";
+          grid-template-columns: 25% 25% 15% 15% 20% 20%;
+          grid-template-rows: 25% 25% 25%
+        }
+        .box, .girl, .buildings, .button1, .button2, .button3, .button4 {
+          max-width: 120%; /* make the elements take up the full width of the screen */
+          max-height: 100%;
+        }
+        .girl {
+            height: 80%;
+            width: 120%;
+            margin-top: 50%;
+            margin-left: -50%;
+        }
+        .buildings{
+            width:120%;
+        }
+      }
+      
+      @media (max-width: 460px) {
 
+        .girl {
+            width: 110%;
+            margin-top: 68%;
+            margin-left: -60%;
+        }
+        .buildings{
+            width:120%;
+        }
+      }
+  
+      @media (max-width: 350px) {
+
+        .girl {
+            height: 80%;
+            width: 120%;
+            margin-top: 83%;
+        }
+    }
+
+    @media (max-width: 260px) {
+
+        .girl {
+            height: 80%;
+            width: 120%;
+            margin-top: 130%;
+        }
+    }

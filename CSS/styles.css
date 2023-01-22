@@ -14,6 +14,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .grid-container-2 {
@@ -23,15 +24,13 @@ body, html {
       ". . . ."
       ". . . ."
       ". . . .";
-    background-image: url('/images/plainhd.png');
+    background-image: url('/images/brownbg.png');
     background-size: cover;
     height: 100%;
     position: relative;
     overflow-x: hidden;
 }
 .logo {
-    grid-area: logo;
-    background-color: yellow;
     max-width: 15%;
     max-height: 65%;
     grid-column: 1; /* positions the element in the first column of the grid */
@@ -41,13 +40,18 @@ body, html {
 
     
 
-    .button1, .button2, .button3, .button4 {
+    .button1, .button2, .button3 {
         background-color: rgba(255, 250, 250, 0.1);
         z-index: 1;
         background-size: 100% 100%; /*to make the image cover the entire element */
         background-repeat: no-repeat;
         width: 80%;
         height: 40%;
+        border-color: rgba(255, 250, 250, 0.0);
+        border-top-left-radius: 60%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 20%;
+        border-top-right-radius: 40%;
     }
 
     .button1 {
@@ -71,9 +75,10 @@ body, html {
         .girl {
             grid-area: girl;
             background-image: url(/images/girl.png);
-            background-size: 100% 100%;
+            background-size: 100% 110%;
             background-repeat: no-repeat;
             z-index: 2;
+            width: 110%;
         }
         
         
@@ -92,7 +97,7 @@ body, html {
         background-image: url(/images/buildings.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        width: 140%;
+        width: 150%;
         z-index: 2;
     }
     @media (max-width: 800px) {

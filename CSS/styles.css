@@ -13,6 +13,7 @@ body, html {
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -27,7 +28,21 @@ body, html {
     background-image: url('/images/brownbg.png');
     background-size: cover;
     height: 100%;
-    position: relative;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-areas: 
+      "button1 button2 button3 button4"
+      ". . . ."
+      ". . . ."
+      ". . . .";
+    background-image: url('/images/brownbg.png');
+    background-size: cover;
+    height: 100%;
+    background-position: center;
     overflow-x: hidden;
 }
 .logo {

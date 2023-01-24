@@ -22,8 +22,8 @@ body, html {
     display: grid;
     grid-template-areas: 
       "button1 button2 button3 button4"
-      ". . . ."
-      ". . . ."
+      "chocolategnome chocolategnome . ."
+      "chocolategnome chocolategnome . ."
       ". . . .";
     background-image: url('/images/brownbg.png');
     background-size: cover;
@@ -114,6 +114,15 @@ body, html {
         background-repeat: no-repeat;
         width: 150%;
         z-index: 2;
+    }
+
+    .chocolategnome {
+        grid-area: chocolategnome;
+        background-image: url(/images/chocblock.png);
+        background-size: 100% 100%;
+        height: 100%;
+        width: 100%;
+        margin-top: 0em;
     }
     @media (max-width: 800px) {
         .grid-container-1 {

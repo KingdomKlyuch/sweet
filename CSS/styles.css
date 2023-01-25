@@ -21,9 +21,9 @@ body, html {
 .grid-container-2 {
     display: grid;
     grid-template-areas: 
-      "button1 button2 . caramel"
-      ". . . caramel"
-      ". . . ."
+      "button1 . . caramel"
+      ". . barwelves caramel"
+      ". . barwelves ."
       ". . . .";
     background-image: url('/images/smooth.png');
     background-size: 100% 100%;
@@ -132,6 +132,16 @@ body, html {
         background-repeat: no-repeat;
         z-index: 0;
         margin-bottom: 10%;
+        opacity: 90%;
+    }
+
+    .barwelves {
+        grid-area: barwelves;
+        background-image: url(/images/barwelves.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        z-index: 0;
+        margin-bottom: 0%;
         opacity: 90%;
     }
 

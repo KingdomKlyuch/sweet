@@ -30,7 +30,7 @@ body, html {
     height: 100%;
     background-position: center;
     z-index: 1;
-    margin-top: -0.5%;
+    margin-top: -.1%;
 }
 
 .grid-container-3 {
@@ -45,7 +45,6 @@ body, html {
     height: 200%;
     background-position: center;
     overflow-x: hidden;
-    margin-top: -0.2%;
 }
 .logo {
     display: flex;
@@ -138,20 +137,49 @@ body, html {
     .barwelves {
         grid-area: barwelves;
         background-image: url(/images/barwelves.png);
-        background-size: 100% 100%;
+        background-size: 80% 80%;
         background-repeat: no-repeat;
         z-index: 0;
-        margin-bottom: 0%;
+        margin-top: 60%;
         opacity: 90%;
     }
     .ferelves {
         grid-area: ferelves;
         background-image: url(/images/ferelves.png);
-        background-size: 100% 100%;
+        background-size: 80% 80%;
         background-repeat: no-repeat;
         z-index: 0;
-        margin-top: 50%;
+        margin-top: 55%;
         opacity: 90%;
+    }
+
+
+
+    .navbar {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        z-index: 4;
+        margin-top: 1.2%;
+    }
+
+    .navbarcontainer {
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 80px;
+        border: 3px solid rgb(77, 77, 140);
+        box-shadow: rgb(77, 77, 140);
+        position: relative;
+        width: 50%;
+    }
+
+    .lgmenu {
+        align-items: center;
+        display: flex;
     }
 
 
@@ -166,6 +194,14 @@ body, html {
           grid-template-columns: 25% 25% 15% 15% 20% 20%;
           grid-template-rows: 25% 25% 25%
         }
+        .grid-container-2 {
+            display: grid;
+            grid-template-areas: 
+              "button1 . . caramel"
+              "ferelves . barwelves caramel"
+              ". . barwelves ."
+              ". . . .";
+        }
         .box, .girl, .buildings, .button1, .button2, .button3, .button4 {
           max-width: 120%; /* make the elements take up the full width of the screen */
           max-height: 100%;
@@ -178,8 +214,6 @@ body, html {
         }
         .buildings{
             width:120%;
-        }
-        .button1, .button2gomust2
         }
         
         .box{
@@ -217,7 +251,20 @@ body, html {
             width: 150%;
             height: 60%;
         }
-
+        .caramel{
+            width: 150%;
+            height: 100%;
+            margin-left: -10%;
+        }
+        .barwelves{
+            width: 190%;
+            margin-bottom: -80%;
+            margin-left: -30%;
+        }
+        .ferelves{
+            width: 170%;
+            margin-bottom: -150%;
+        }
       }
       
       @media (max-width: 460px) {
@@ -248,32 +295,4 @@ body, html {
             width: 120%;
             margin-top: 130%;
         }
-    }
-
-
-    .navbar {
-        display: flex;
-        position: fixed;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        z-index: 4;
-        margin-top: 1.2%;
-    }
-
-    .navbarcontainer {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 80px;
-        border: 3px solid rgb(77, 77, 140);
-        box-shadow: rgb(77, 77, 140);
-        position: relative;
-        width: 50%;
-    }
-
-    .lgmenu {
-        align-items: center;
-        display: flex;
     }}

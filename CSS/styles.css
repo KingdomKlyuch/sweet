@@ -22,7 +22,7 @@ body, html {
     display: grid;
     grid-template-areas: 
       "button1 . . caramel"
-      ". . barwelves caramel"
+      "ferelves . barwelves caramel"
       ". . barwelves ."
       ". . . .";
     background-image: url('/images/smooth.png');
@@ -142,6 +142,15 @@ body, html {
         background-repeat: no-repeat;
         z-index: 0;
         margin-bottom: 0%;
+        opacity: 90%;
+    }
+    .ferelves {
+        grid-area: ferelves;
+        background-image: url(/images/ferelves.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        z-index: 0;
+        margin-top: 50%;
         opacity: 90%;
     }
 

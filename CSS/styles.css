@@ -25,11 +25,12 @@ body, html {
       "chocolategnome chocolategnome . ."
       "chocolategnome chocolategnome . ."
       ". . . .";
-    background-image: url('/images/brownbg.png');
-    background-size: cover;
+    background-image: url('/images/layerbg.png');
+    background-size: 100% 100%;
     height: 100%;
     background-position: center;
-    overflow-x: hidden;
+    z-index: 1;
+    margin-top: -0.5%;
 }
 
 .grid-container-3 {
@@ -44,6 +45,7 @@ body, html {
     height: 100%;
     background-position: center;
     overflow-x: hidden;
+    margin-top: -0.2%;
 }
 .logo {
     max-width: 15%;
@@ -94,6 +96,7 @@ body, html {
             background-repeat: no-repeat;
             z-index: 2;
             width: 110%;
+            margin-bottom: 1%;
         }
         
         
@@ -120,8 +123,8 @@ body, html {
         grid-area: chocolategnome;
         background-image: url(/images/chocblock.png);
         background-size: 100% 100%;
-        height: 100%;
-        width: 70%;
+        height: 70%;
+        width: 50%;
         border-radius: 30%;
         margin-left: 10%;
         margin-top: 25.9%;

@@ -37,23 +37,29 @@ body, html {
     display: grid;
     grid-template-areas: 
       "button1 button2 button3 button4"
-      ". . . ."
-      ". . . ."
+      "worm worm worm worm"
+      "worm worm worm worm"
       ". . . .";
     background-image: url('/images/brwnbg.png');
-    background-size: 100% 100%;
-    height: 100%;
+    background-size: 200% 100%;
+    height: 200%;
     background-position: center;
     overflow-x: hidden;
     margin-top: -0.2%;
 }
 .logo {
-    max-width: 15%;
-    max-height: 65%;
-    grid-column: 1; /* positions the element in the first column of the grid */
-    justify-self: start; /* aligns the element to the left side of the grid cell horizontally */
-    align-self: start; /* aligns the element to the top of the grid cell vertically */
-    }
+    display: flex;
+    align-items: center;
+    height: 0px;
+    cursor: pointer;
+    padding: 29px;
+    background-image: url(/images/littlelogo.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 25px;
+    margin-top: 2px;
+    margin-bottom: 2;
+}
 
     
 
@@ -131,6 +137,13 @@ body, html {
         border-style:double;
         border-start-start-radius: 40%;
     }
+
+    .worm {
+        grid-area: worm;
+        background-image: url(/images/worm.png);
+        background-size: 100% 100%;
+
+    }
     @media (max-width: 800px) {
         .grid-container-1 {
           height: 100%;
@@ -155,8 +168,7 @@ body, html {
         .buildings{
             width:120%;
         }
-        .button1, .button2, .button3{
-            width: 110%;
+        .button1, .button2gomust2
         }
         
         .box{
@@ -229,23 +241,28 @@ body, html {
 
 
     .navbar {
-        position: fixed;
-        height: 70px;
-        width: 100%;
-        padding: 18px 10px;
         display: flex;
-        -webkit-box-align: center;
+        position: fixed;
+        width: 100%;
+        justify-content: center;
+        display: flex;
         align-items: center;
         z-index: 4;
+        margin-top: 1.2%;
     }
 
     .navbarcontainer {
         display: flex;
-        -webkit-box-pack: justify;
         justify-content: space-between;
         background-color: white;
-        border-radius: 20%;
+        border-radius: 80px;
         border: 3px solid rgb(77, 77, 140);
         box-shadow: rgb(77, 77, 140);
         position: relative;
+        width: 50%;
+    }
+
+    .lgmenu {
+        align-items: center;
+        display: flex;
     }

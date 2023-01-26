@@ -23,7 +23,7 @@ body, html {
     grid-template-areas: 
       "button1 . . caramel"
       "ferelves . barwelves caramel"
-      ". . barwelves ."
+      "ferelves . barwelves ."
       ". . . .";
     background-image: url('/images/smooth.png');
     background-size: 100% 100%;
@@ -31,21 +31,9 @@ body, html {
     background-position: center;
     z-index: 1;
     margin-top: -.1%;
-}
-
-.grid-container-3 {
-    display: grid;
-    grid-template-areas: 
-      "button1 button2 button3 button4"
-      "worm worm worm worm"
-      "worm worm worm worm"
-      ". . . .";
-    background-image: url('/images/brwnbg.png');
-    background-size: 200% 100%;
-    height: 200%;
-    background-position: center;
     overflow-x: hidden;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -137,24 +125,44 @@ body, html {
     .barwelves {
         grid-area: barwelves;
         background-image: url(/images/barwelves.png);
-        background-size: 80% 80%;
+        background-size: 90% 100%;
         background-repeat: no-repeat;
+        width: 140%;
         z-index: 0;
-        margin-top: 60%;
+        margin-top: 55%;
+        margin-left: -20%;
         opacity: 90%;
     }
     .ferelves {
         grid-area: ferelves;
         background-image: url(/images/ferelves.png);
-        background-size: 80% 80%;
+        background-size: 100% 50%;
         background-repeat: no-repeat;
         z-index: 0;
-        margin-top: 55%;
+        margin-top: 50%;
         opacity: 90%;
     }
-
-
-
+    .lineblue {
+        grid-area: lineblue;
+        background-image: url(/images/blue.png);
+        background-size: 90% 90%;
+        background-repeat: no-repeat;
+        opacity: 90%;
+    }
+    .linepink {
+        grid-area: linepink;
+        background-image: url(/images/pink.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        opacity: 90%;
+    }
+    .linepurple {
+        grid-area: linepurple;
+        background-image: url(/images/purple.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        opacity: 90%;
+    }
     .navbar {
         display: flex;
         position: fixed;
@@ -182,6 +190,10 @@ body, html {
         display: flex;
     }
 
+    @media (max-width: 1050px) {
+        .ferelves{
+            margin-bottom: -40%;
+        }}
 
     @media (max-width: 800px) {
         .grid-container-1 {
@@ -218,6 +230,21 @@ body, html {
         
         .box{
             padding: 50%;
+        }
+        .caramel{
+            width: 110%;
+            height: 100%;
+            margin-left: -10%;
+        }
+        .barwelves{
+            width: 130%;
+            margin-bottom: -0%;
+            margin-left: -30%;
+        }
+        .ferelves{
+            width: 120%;
+            margin-bottom: -170%;
+            margin-top: 60%;
         }
 
       
@@ -258,12 +285,15 @@ body, html {
         }
         .barwelves{
             width: 190%;
-            margin-bottom: -80%;
+            height: 85%;
+            margin-bottom: -100%;
+            margin-top: 50%;
             margin-left: -30%;
         }
         .ferelves{
             width: 170%;
-            margin-bottom: -150%;
+            margin-top: 90%;
+            margin-bottom: -230%;
         }
       }
       
@@ -277,6 +307,24 @@ body, html {
         .buildings{
             width:120%;
         }
+        .caramel{
+            width: 180%;
+            height: 100%;
+            margin-left: -40%;
+            margin-bottom: -40%;
+            opacity: 80%;
+            margin-top: 10%;
+        }
+        .barwelves{
+            width: 190%;
+            margin-bottom: -20%;
+            margin-top: 100%;
+        }
+        .ferelves{
+            width: 170%;
+            margin-top: 130%;
+            margin-bottom: -300%;
+        }
       }
   
       @media (max-width: 350px) {
@@ -285,6 +333,11 @@ body, html {
             height: 80%;
             width: 120%;
             margin-top: 83%;
+        }
+        .ferelves{
+            width: 170%;
+            margin-top: 170%;
+            margin-bottom: -390%;
         }
     }
 

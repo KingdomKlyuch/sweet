@@ -21,10 +21,10 @@ body, html {
 .grid-container-2 {
     display: grid;
     grid-template-areas: 
-    "button1 . . caramel"
+    ". . d2 caramel"
     ". barwelves . caramel"
-    ". barwelves . ."
-    ". . . .";
+    ". barwelves d1 d1"
+    ". . d1 d1";
     background-image: url('/images/smooth.png');
     background-size: 100% 100%;
     height: 100%;
@@ -134,7 +134,25 @@ body, html {
         margin-left: -20%;
         opacity: 90%;
     }
-    
+
+    .details {
+
+        background-image: url(/images/details.png);
+        background-size: 90% 90%;
+        background-repeat: no-repeat;
+        z-index: 0;
+    }
+    .d1 {
+        grid-area: d1;
+    }
+
+    .d2 {
+        grid-area: d2;
+        height: 100%;
+        margin-top: 20%;
+        margin-left: -30%;
+        margin-right: 10%;
+    }
     .navbar {
         display: flex;
         position: fixed;
@@ -177,14 +195,6 @@ body, html {
               "buildings buildings buildings buildings girl girl";
           grid-template-columns: 25% 25% 15% 15% 20% 20%;
           grid-template-rows: 25% 25% 25%
-        }
-        .grid-container-2 {
-            display: grid;
-            grid-template-areas: 
-              "button1 . . caramel"
-              ". barwelves . caramel"
-              ". barwelves . ."
-              ". . . .";
         }
         .box, .girl, .buildings, .button1, .button2, .button3, .button4 {
           max-width: 120%; /* make the elements take up the full width of the screen */
@@ -256,6 +266,17 @@ body, html {
             margin-bottom: -100%;
             margin-top: 50%;
             margin-left: -30%;
+        }
+        .d1 {
+            height: 70%;
+            margin-left: 0%;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .d2 {
+            width: 200%;
+            margin-left: -130%;
         }
       }
       

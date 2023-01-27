@@ -23,9 +23,9 @@
   <div class="box"></div>
   <div class="girl"></div>
   <div class="buildings" ></div>
-  <button class="button button1">Button 1</button>
-  <button class="button button2">Button 2</button>
-  <button class="button button3">Button 3</button>
+  <button id="open-modal-btn-1" onclick="openModal(1)"class="button button1">Button 1</button>
+  <button id="open-modal-btn-2" onclick="openModal(2)" class="button button2">Button 2</button>
+  <button id="open-modal-btn-3" onclick="openModal(3)" class="button button3">Button 3</button>
 </div>
 
 <div class="grid-container-2">
@@ -34,6 +34,35 @@
 <div class="details d1"></div>
 <div class="details d2"></div>
 </div>
+
+<button id="open-modal-btn-1" onclick="openModal(1)">Open Modal 1</button>
+<button id="open-modal-btn-2" onclick="openModal(2)">Open Modal 2</button>
+<button id="open-modal-btn-3" onclick="openModal(3)">Open Modal 3</button>
+
+<div id="modal-1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(1)">&times;</span>
+    <p>Modal 1 Content</p>
+    <img src="/images/cloud1.png">
+  </div>
+</div>
+
+<div id="modal-2" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(2)">&times;</span>
+    <p>Modal 2 Content</p>
+    <img src="/images/cloud2.png">
+  </div>
+</div>
+
+<div id="modal-3" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(3)">&times;</span>
+    <p>Modal 3 Content</p>
+    <img src="/images/cloud3.png">
+  </div>
+</div>
+
 
 
 <div class="footer">
@@ -47,7 +76,6 @@
 
       
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://unpkg.com/parallax-js"></script>
   <script src="/script.js"></script>
 </body>
 </html>

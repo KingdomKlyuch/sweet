@@ -45,3 +45,8 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
+
+function toggleMenu() {
+  var hamburger = document.querySelector('.hamburger');
+  hamburger.classList.toggle('active');
+}

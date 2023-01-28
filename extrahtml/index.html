@@ -11,13 +11,28 @@
 </head>
 <body>
 
-<div class="navbar">
-  <div class="navbarcontainer">
-    <div class="logo"></div>
-    <div class="lgmenu"></div>
-    <div class="smmenu"></div>
+  <div class="navbar">
+    <div class="navbarcontainer">
+        <div class="logo"></div>
+        <div class="hamburger" onclick="toggleMenu()"></div>
+        <div class="dropdown-menu">
+            <div class="menu-left">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#order">Order</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-right">
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
 
 <div class="grid-container-1">
   <div class="box"></div>
@@ -42,7 +57,7 @@
 <div id="modal-1" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal(1)">&times;</span>
-    <p>Modal 1 Content</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim sit illum, dicta reprehenderit voluptate nulla quo beatae eos mollitia sequi aliquid velit, similique laudantium eaque nisi incidunt tenetur repellendus doloremque! </p>
     <img src="/images/cloud1.png">
   </div>
 </div>

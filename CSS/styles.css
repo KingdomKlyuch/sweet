@@ -153,32 +153,30 @@ body, html {
         margin-left: -30%;
         margin-right: 10%;
     }
-    .navbar {
-        display: flex;
-        position: fixed;
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        z-index: 4;
-        margin-top: 1.2%;
-    }
+/* Default styles for large screens */
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  margin-top: 1.2%;
+}
 
-    .navbarcontainer {
-        display: flex;
-        justify-content: space-between;
-        background-color: white;
-        border-radius: 80px;
-        border: 3px solid rgb(77, 77, 140);
-        box-shadow: rgb(77, 77, 140);
-        position: relative;
-        width: 50%;
-    }
+.navbarcontainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 80px;
+  border: 3px solid rgb(77, 77, 140);
+  box-shadow: rgb(77, 77, 140);
+  position: relative;
+  width: 50%;
+}
 
-    .lgmenu {
-        align-items: center;
-        display: flex;
-    }
+
+
 /* The Modal (background) */
 /* Add some basic styles for the modals */
 .modal {
@@ -367,7 +365,18 @@ text-decoration: none;
 cursor: pointer;
 }
   
-  
+.hamburger.active div:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+}
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active div:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+}
+
         
 
     @media (max-width: 1050px) {
@@ -414,7 +423,71 @@ cursor: pointer;
             margin-left: -30%;
         }
 
-      
+      /* Styles for small screens */
+@media (max-width: 768px) {
+  .navbar {
+      flex-wrap: wrap;
+  }
+
+  .navbarcontainer {
+      width: 100%;
+      justify-content: center;
+  }
+
+  .lgmenu {
+      display: none;
+  }
+
+  /* Hamburger icon */
+  .hamburger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    cursor: pointer;
+    display: block;
+    cursor: pointer;
+    color: black;
+  }
+
+.hamburger div {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    margin: 6px 0;
+}
+
+
+  /* Dropdown menu */
+  .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      border-radius: 80px;
+      border: 3px solid rgb(77, 77, 140);
+      box-shadow: rgb(77, 77, 140);
+      width: 100%;
+      z-index: 4;
+  }
+
+  .dropdown-menu.active {
+      display: block;
+  }
+
+  /* Social media links */
+  .social-links {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+  .social-links a {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+  }
+}
 
     @media (max-width: 600px) {
         .grid-container-1 {

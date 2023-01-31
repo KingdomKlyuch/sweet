@@ -174,7 +174,21 @@ body, html {
   position: relative;
   width: 50%;
 }
+.menu-left {
+  display: flex;
+  align-items: center;
+}
+.menu-left a {
+  display: flex;
+  margin-right: 15px;
+  padding: 0 10px;
+  color: black;
+  text-decoration: none;
+}
 
+.menu-left a:hover {
+  color: red;
+}
 
 
 /* The Modal (background) */
@@ -195,11 +209,15 @@ body, html {
   
   /* Modal Content */
   .modal-content {
+    position: relative;
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 0;
     border: 1px solid #888;
     width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
   }
   
   /* The Close Button */
@@ -331,18 +349,7 @@ body, html {
     padding: 2px 16px;
   }
   
-  /* Modal Content */
-  .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
-  }
+
 
 /* Add Animation */
 @keyframes animatetop {
@@ -364,18 +371,7 @@ color: #000;
 text-decoration: none;
 cursor: pointer;
 }
-  
-.hamburger.active div:nth-child(1) {
-  transform: rotate(45deg);
-  position: absolute;
-}
-.hamburger.active div:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.active div:nth-child(3) {
-  transform: rotate(-45deg);
-  position: absolute;
-}
+
 
         
 
@@ -430,7 +426,7 @@ cursor: pointer;
   }
 
   .navbarcontainer {
-      width: 100%;
+      width: 85%;
       justify-content: center;
   }
 
@@ -438,56 +434,8 @@ cursor: pointer;
       display: none;
   }
 
-  /* Hamburger icon */
-  .hamburger {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3px;
-    cursor: pointer;
-    display: block;
-    cursor: pointer;
-    color: black;
-  }
 
-.hamburger div {
-    width: 100%;
-    height: 4px;
-    background-color: #000;
-    margin: 6px 0;
-}
-
-
-  /* Dropdown menu */
-  .dropdown-menu {
-      display: none;
-      position: absolute;
-      background-color: white;
-      border-radius: 80px;
-      border: 3px solid rgb(77, 77, 140);
-      box-shadow: rgb(77, 77, 140);
-      width: 100%;
-      z-index: 4;
-  }
-
-  .dropdown-menu.active {
-      display: block;
-  }
-
-  /* Social media links */
-  .social-links {
-      display: flex;
-      justify-content: flex-end;
-  }
-
-  .social-links a {
-      font-size: 1.5rem;
-      margin-left: 1rem;
-  }
-}
+  
 
     @media (max-width: 600px) {
         .grid-container-1 {
@@ -584,4 +532,4 @@ cursor: pointer;
             width: 120%;
             margin-top: 130%;
         }
-    }}
+    }}}

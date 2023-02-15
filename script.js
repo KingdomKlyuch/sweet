@@ -47,6 +47,6 @@ window.onclick = function(event) {
 }
 
 function toggleMenu() {
-  var hamburger = document.querySelector('.hamburger');
-  hamburger.classList.toggle('active');
+  var dropdown = document.querySelector('.hamburger-menu__dropdown');
+  dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
 }

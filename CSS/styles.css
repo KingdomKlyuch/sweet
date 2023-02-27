@@ -166,7 +166,7 @@ body, html {
 
 .navbarcontainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: white;
   border-radius: 80px;
   border: 3px solid rgb(77, 77, 140);
@@ -361,6 +361,7 @@ body, html {
     width: 30px;
     height: 25px;
     cursor: pointer;
+    margin-top: 15px;
   }
 
   .hamburger-menu__icon-bar {
@@ -373,7 +374,6 @@ body, html {
   .hamburger-menu__dropdown {
     position: absolute;
     top: 50px;
-    right: 0;
     width: 200px;
     padding: 20px;
     background-color: white;

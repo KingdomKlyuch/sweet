@@ -11,3 +11,5 @@ The original set up had a workspace created that implemented
 modules, I encountered some problems getting that working,
 so there is only one functional JS file for the time being.
 A future edition of the web page will implement modules.
+
+Latest update 01/03/2023
